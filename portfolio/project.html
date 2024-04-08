@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" sizes="32x32" href="project.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" sizes="32x32" href=".png">
+    <title>PROJECT</title>
+    <style>
+
+
+.services-container{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+
+}
+
+
+.services-container .services-box:hover{
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+.services-box {
+ 
+  width: 10%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  padding: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.services-box h4 {
+  font-size: 24px;
+  
+  margin-bottom: 20px;
+  color: rgb(73, 157, 226);
+}
+
+.services-box img {
+  width: 20%;
+  
+  
+  transition: .5s ease;
+ 
+}
+.services-box.services-layer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:30%;
+ 
+  background: linear-gradient(rgba(43, 223, 175, 0.1),var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+transform: translateY(100%);
+transform: .5s ease;
+}
+
+.services-box:hover .services-layer{
+  transform: translateY(100%);
+}
+
+.services-layer {
+  font-size: 3rem;
+
+}
+h2{
+  position: absolute;
+  left:5px;
+
+}
+
+
+
+.services-box a:hover img {
+  background-color: #38ebeb;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .services-box {
+    width: 50%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>PORTFOLIO</span></a>
+        <box-icon name='menu' id="menu-icon"></box-icon>
+        <nav class="navbar">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="ser.html">SERVICES</a>
+            <a href="certi.html">CERTIFICATION</a>
+            <a href="contact.html">CONTACT</a>
+            
+        </nav>
+    </header> 
+    <section class="services" id="services">
+        <h2 class="heading"><span>Projects </span></h2>
+        
+<div class="services-container">
+
+        <div class="services-box"> 
+          <img src="fo.jpeg" alt="">
+            <h4>ECOMMERCE </h4> 
+        <a href="https://github.com/5karthi/ECOmmmerce-fruits-vegtables" class="btn">Verify</a>
+        </div>
+      
+
+        <div class="services-box"> 
+          <img src="netflix.png" alt="">
+          
+            <h4>NETFLIX-CLONE</h4>
+            <a href="https://github.com/5karthi/NETFLIX-CLONE" class="btn">Verify</a>
+        </div>
+        
+     
+        <div class="services-box">
+          <img src="hotstar.png" alt="">
+            <h4>HOTSTAR-CLONE</h4>
+          <a href="https://github.com/5karthi/Hotstar-" class="btn">Verify</a>
+        </div>
+        
+
+       
+        <div class="services-box">
+          <img src="land.jpeg" alt="">
+          
+            <h4>LANDING-PAGE</h4>
+           <a href="https://github.com/5karthi/codsoft/tree/main/landing%20page" class="btn">Verify</a>
+        </div>
+        
+        <div class="services-box">
+          <img src="blog.jpeg" alt="">
+          
+            <h4>BLOG</h4>
+           <a href="https://github.com/5karthi/codsoft/tree/main/BLOGGING" class="btn">Verify</a>
+        </div>
+        
+          <div class="services-box">
+          <img src="cal.png" alt="">
+
+            <h4>CALCULATOR</h4>
+           <a href="https://github.com/5karthi/codsoft/tree/main/dark%20and%20light%20mode%20calci" class="btn">Verify</a>
+        </div></div></div>
+</div></section>
+
+
+</body>
+</html>
